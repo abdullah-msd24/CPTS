@@ -1,0 +1,53 @@
+#Network Enumeration with Nmap
+
+#Overview
+
+This module is mainly about Nmap and how we can use it for our purpose.
+
+It focuses on telling us that it is better to know how to use a tool to its full capacity by spending hours practicing with it because it can help us save time in a real situation. Because we will already know what command we have to type for our desired goal, which will help us save time and move forward with our testing.
+
+Nmap: It is a network mapping tool that is used worldwide for network purposes. It is used to scan for ports, services, versions, OS, and IDS/IPS-related work.
+
+Nmap sends raw packets to test everything.
+
+## Syntax
+---->  nmap <scan type> <options> <target ip>
+It is important to know this because I didn't, and I was just randomly adding stuff after nmap and checking if it would work or not. But after this, I came to know that I have to follow it so I don't mess up and waste time. Hence, practice it.
+
+Nmap's different options work differently. It is better to study them and apply them in practice on different HTB labs.
+
+Each option structures the packet differently
+
+____
+
+### Important
+the TTL values(time to live) give us not only the time the packet is alive for, but it also tells us the operating system of the target. Very important for us this detail from nmap scans.
+ 
+#### 
+The TTL values (Time to Live) give us not only the time the packet is alive for, but they also tell us the OS of the operating system of the target. This is a very important detail for us from Nmap scans.
+
+
+Sometimes Nmap leaves some details from an automated scan, and it should be analyzed by doing a manual scan.
+____
+
+Nmap also offers scripting called NSE, which helps us connect with some of the services in Lua language, and there are a total of 14 categories.
+Category	        Description
+auth	            Determination of authentication credentials.
+broadcast	        Scripts, which are used for host discovery by broadcasting and the discovered hosts, can be automatically added to the remaining scans.
+brute	            Executes scripts that try to log in to the respective service by brute-forcing with credentials.
+default	            Default scripts executed by using the -sC option.
+discovery	        Evaluation of accessible services.
+dos	                These scripts are used to check services for denial of service vulnerabilities and are used less as it harms the services.
+exploit	            This category of scripts tries to exploit known vulnerabilities for the scanned port.
+external	        Scripts that use external services for further processing.
+fuzzer	            This uses scripts to identify vulnerabilities and unexpected packet handling by sending different fields, which can take much time.
+intrusive	        Intrusive scripts that could negatively affect the target system.
+malware	            Checks if some malware infects the target system.
+safe	            Defensive scripts that do not perform intrusive and destructive access.
+version	            Extension for service detection.
+vuln	            Identification of specific vulnerabilities.
+
+_____
+
+
+The best place to study more about nmap is nmap.org. It has detailed pages for each thing on nmap.
