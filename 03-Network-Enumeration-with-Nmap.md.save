@@ -51,3 +51,26 @@ _____
 
 
 The best place to study more about nmap is nmap.org. It has detailed pages for each thing on nmap.
+
+_____
+
+#### Firewall and IDS/IPS
+
+Firewall is used to block unauthorized connection attempt from external networks
+
+IDS is Intrusion detection system which basically detects abnormal activity and reports it to Intrusion prevention system to take action by either dropping, accepting, or rejecting the packet.
+
+Dropped packet is not the same as rejected packet.
+
+When a packet is dropped, the reciever will not get a responce like in nmap case it will not get a responce and will show filtered.
+
+
+_____
+
+#### Decoy
+
+A decoy -D is set to have random IP address inserted into IP header to disguise the packet origin.
+The decoy must be alive otherwisethe service on target may be unreacheable du to security mechanism.
+
+
+
